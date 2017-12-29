@@ -21,7 +21,7 @@
 </head>
 <body>
   <div>
-    <h1>My First Git Repo html page</h1>
+    <h1>First Git Repo html page</h1>
     <p>This is testing page created by me....</p>
   </div>
 </body>
