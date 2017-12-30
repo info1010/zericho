@@ -23,7 +23,7 @@ $(function() {
             }
             $.ajax({
                 //url: "../mail/contact_me.php",
-                url: "http://demo.infoenum.com/nujible/mail/contact_me.php",
+                url: "https://demo.infoenum.com/nujible/mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
