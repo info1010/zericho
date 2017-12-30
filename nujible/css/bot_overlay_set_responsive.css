@@ -1,0 +1,16 @@
+/*------------------------------
+	CSS for bottom popup overlay box width set according their image width.
+---------------*/
+
+.watch_index .caption {
+  width: 90%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.watch_index .caption.border_radius_fiftyfour {
+	-webkit-border-radius: 54px;
+	-moz-border-radius: 54px;
+	border-radius: 54px;
+	width: 90%;
+}

@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Background and Border:	#f2f2f2 (Iwatch White)
+# Color:	#333 (android blue)
+# */
+
+.watch_index header, .watch_index .navbar-default,.bck_dark_blk{
+  background: #f2f2f2;
+}
+
+.btn-default.bck_color_dark ,.get_api,.comma_icon_blk,.form_send_btn:focus,.form_send_btn:hover{
+  background: rgba(51, 51, 51, 0.7);
+}
+hr.star-primary,.watch_index .navbar-default .navbar-nav > .active > a, .watch_index .navbar-default .navbar-nav > .active > a:focus, .watch_index .navbar-default .navbar-nav > .active > a:hover,.app_screen_mob_icon,.app_screen_mob_icon:hover,.app_screen_iwatch_icon:hover, .app_screen_iwatch_icon_active{border-color:#333;}
+
+.watch_index .iwatch_feature_content .iphone_ban1 h2,.form_send_btn ,.watch_index .navbar-default .navbar-nav > li > a,.watch_index .navbar-default .navbar-nav > .active > a, .watch_index .navbar-default .navbar-nav > .active > a:focus, .watch_index .navbar-default .navbar-nav > .active > a:hover, .watch_index .iphone_ban1 h1,.watch_index .navbar-default .navbar-nav > .active > a, .watch_index .navbar-default .navbar-nav > .active > a:focus, .watch_index .navbar-default .navbar-nav > .active > a:hover, .watch_index .iphone_ban1 h1,.watch_index .iphone_ban1 h2  {
+  color: #333;
+}
+.watch_index .iphone_ban1 p{color:#8a8a8a;}
+.carousel-indicators .active,.form_send_btn{border:2px solid #333;}
+.app_store_bck{ background-color: #333333;}
+.form_send_btn:hover,.form_send_btn:focus{ border-color: #333;color:#fff;}
+.iwatch_bck:hover, .iwatch_bck:focus, .iwatch_bck:active {
+    border: 2px solid #333;
+    color: #333;
+}             
+.app_store_bck:hover, .app_store_bck:focus, .app_store_bck:active{
+	background-image:url("../images/iphone_download_icon_hover.png");
+}         
+
+
+
+.app_screen_mob_icon{color:#fff;background-color: #333333;}
+.app_screen_mob_icon_nonactive{background-color:transparent;background-image:url('../images/mobile1_hover.png');}
+.app_screen_iwatch_icon{background-image:url('../images/watch.png');}
+.app_screen_iwatch_icon:hover, .app_screen_iwatch_icon_active{background-image:url('../images/watch_white.png');;}
+.app_screen_mob_icon:hover{background-image:url('../images/mobile1.png');background-color:#333333;}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    border-bottom: 2px solid #333;
+    color: #fff;
+}
+.nuji-banner h1,
+.nuji-banner h2,
+.nuji-banner p{
+    color: rgba(255, 255, 255, 1);
+}
+.nuji-banner p{
+    font-size: 19px;
+}
+.hitw-txt > h2{
+    font-weight: 500;
+}
+@media(max-width:767px) {
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #231f20;
+	}
+}
+
+
+

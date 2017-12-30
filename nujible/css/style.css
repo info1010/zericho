@@ -1,0 +1,1127 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body/ #page-top
+	2. Header Tag/ header
+		2.1. Navigation / .navbar
+	3. Features Section / section
+		3.1. Content / .container
+	4. Video Section / section
+		4.1. Content / .container
+	5. User Section / section
+		5.1. Content / .container
+	6. Screenshot Section / section
+		6.1. Content / .container	
+	7. Contact Us / #contact
+		7.1. Content / .container
+	8. Footer Tag/ footer
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background:	#ffffff (White)
+Header h1:	#333 (Dark Grey)
+Header h2:	#333 (Dark Grey)
+Footer:		#fafafa (Light Grey)
+
+a (standard):	#333333 (dark blue)
+-------------------------------------------------------------------*/
+
+
+
+/* BEGIN Open Sans Regular */
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/opensans-regular.eot?v=1.1.0");
+  src: url("../fonts/opensans-regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/opensans-regular.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/opensans-regular.woff?v=1.1.0") format("woff"), 
+  url("../fonts/opensans-regular.ttf?v=1.1.0") format("truetype"),
+  url("../fonts/opensans-regular.svg?v=1.1.0#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+ }
+/* END Open Sans Regular */
+
+/* BEGIN Open Sans  Italic */
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/opensans-italic.eot?v=1.1.0");
+  src: url("../fonts/opensans-italic.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/opensans-italic.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/opensans-italic.woff?v=1.1.0") format("woff"), 
+  url("../fonts/opensans-italic.ttf?v=1.1.0") format("truetype"), 
+  url("../fonts/opensans-italic.svg?v=1.1.0#italic") format("svg");
+  font-weight: normal;
+  font-style: italic; 
+}
+/* END Open Sans Italic */
+
+/* BEGIN Railway  Regular */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-regular.eot?v=1.1.0");
+  src: url("../fonts/raleway-regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/raleway-regular.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/raleway-regular.woff?v=1.1.0") format("woff"), 
+  url("../fonts/raleway-regular.ttf?v=1.1.0") format("truetype"), 
+  url("../fonts/raleway-regular.svg?v=1.1.0#raleway") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+/* END Railway  Regular  */
+
+/* BEGIN Railway  Light */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-light.eot?v=1.1.0");
+  src: url("../fonts/raleway-light.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/raleway-light.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/raleway-light.woff?v=1.1.0") format("woff"), 
+  url("../fonts/raleway-light.ttf?v=1.1.0") format("truetype"), 
+  url("../fonts/raleway-light.svg?v=1.1.0#light") format("svg");
+  font-weight: 300;
+  font-style: normal; 
+}
+/* END Railway  Light  */
+
+/* BEGIN Railway  SemiBold */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-semibold.eot?v=1.1.0");
+  src: url("../fonts/raleway-semibold.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/raleway-semibold.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/raleway-semibold.woff?v=1.1.0") format("woff"), 
+  url("../fonts/raleway-semibold.ttf?v=1.1.0") format("truetype"), 
+  url("../fonts/raleway-semibold.svg?v=1.1.0#semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; 
+}
+/* END Railway  SemiBold  */
+
+/* BEGIN Railway Bold */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-bold.eot?v=1.1.0");
+  src: url("../fonts/raleway-bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+  url("../fonts/raleway-bold.woff2?v=1.1.0") format("woff2"), 
+  url("../fonts/raleway-bold.woff?v=1.1.0") format("woff"), 
+  url("../fonts/raleway-bold.ttf?v=1.1.0") format("truetype"), 
+  url("../fonts/raleway-bold.svg?v=1.1.0#bold") format("svg");
+  font-weight: bold;
+  font-style: normal; 
+}
+/* END Railway Bold  */
+
+body {
+    overflow-x: hidden;
+	font-family:opensans;
+}
+a{color:#333333;}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+	text-decoration:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: raleway;
+    font-weight: 700;
+}
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 50px;
+    border: 0;
+    border-top: solid 2px;
+    text-align: center;
+}
+/*
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+*/
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.star-primary {
+    border-color: #333;
+}
+/*
+hr.star-primary:after {
+    color: #333;
+    background-color: #fff;
+}
+*/
+/* Hide Any Content CSS Code */
+.hide{
+    display: none;
+}
+/* End of Hide Any Content CSS Code */
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #ff309a;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+.download_button{
+	float: right;
+	display: inline-block;
+	margin-left: 23px;
+    margin-top: 17px;
+	padding: 9px;
+}
+.btn-default.bck_color_dark{background:#232525;}
+.btn-default.bck_color_dark:hover,.iwatch_bck:hover,.btn-default.bck_color_dark:focus,.iwatch_bck:focus,.btn-default.bck_color_dark:active,.iwatch_bck:active{background:transparent;}
+.iwatch_bck:hover,.iwatch_bck:focus,.iwatch_bck:active{border: 2px solid #fff;
+    color: #fff;}
+.app_store_bck{
+	background: url("../images/iphone_download_icon.png") no-repeat scroll 30px center #232525;border-width: 2px;
+}
+.app_store_bck:hover,.app_store_bck:focus,.app_store_bck:active{background: url("../images/iphone_download_icon.png") no-repeat scroll 30px center transparent; border-width: 2px;}
+.app_store_bck span{padding-left:40px;}
+.iphone_ban1 h1{
+	font-size:36px;
+	font-family: 'raleway';
+	font-style:normal;
+	font-weight:bold;
+	margin-top: 0;
+	color:rgba(51, 51, 51, 1);
+	text-align:left;
+}
+.iphone_ban1 h2{
+	font-size:26px;
+	font-family: 'raleway';
+	font-style:normal;
+	font-weight:300;
+	color:rgba(51, 51, 51, 1);
+	 margin-bottom: 7px;
+	text-align:left;
+}
+.iphone_ban1 p{
+	font-style:italic;
+	font-size:15px;
+	margin-top: 15px;
+	font-weight:normal;
+	color:rgba(51, 51, 51, 1);
+	text-align:left;
+}
+.get_api:hover,.get_api:focus,.get_api:active{
+	background:transparent;
+}
+.get_api{
+	font-family: 'raleway';
+	font-weight: 600;
+	font-style: normal;
+	font-size:20px;
+	background: none repeat scroll 0 0 #232525;
+	float:left;
+	margin-top: 25px;
+	height: 60px;
+    padding: 12px 25px;
+    width: 250px;
+}
+.feature{
+	font-weight:300;
+	font-style:normal;
+}
+.section_heading .main_head h2{
+	font-weight:300;
+	font-style:normal;
+	font-size:44px;
+}
+.section_heading .main_bold{
+	font-weight:600;
+	font-style:normal;
+}
+.mar_bot_top_ten{
+	margin:10px 0;
+}
+.sec_mar_top{
+	margin-top:50px;
+}
+.ban1_txt{
+	padding-top:170px;
+}
+.ban2_txt{
+	padding-top:70px;
+}
+.ban3_txt{
+	padding-top:90px;
+}
+.float_none{float: none;margin: 0 auto;}
+.img_cen_div{text-align:center;}
+.img_cen_div img{max-width:100%;}
+.videoSec{
+	background:#262626;
+	color:#fff;
+}
+.txt_cen p{text-align:center;}
+.videoSec p {
+    margin-bottom: 60px;
+}
+.user_img_div .inverted_comma,.user_img_div .user_cir_img_div{
+	float:left;
+}
+.user_img_div{
+	width:25%;
+	float:none;
+	margin:0 auto;
+	margin-top:40px;
+}
+.user_cir_img_div .user_cir_img{
+	text-align:center;
+	float:left;
+	width:100%;
+}
+.user_cir_img_div .user_cir_img img{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border:2px solid #3a3a3a;
+}
+.user_cir_star{
+	float:left;
+	text-align:center;
+	width:100%;
+	margin-top:10px;
+}
+.yellow_star i{
+	color:#f3c401;
+}
+.bck_gray{
+	background:#fafafa;
+}
+.bck_gray_dark{
+	background:#f2f2f2;
+}
+.user_name{
+	font-size:15px;
+	text-transform:uppercase;
+	text-align:center;
+}
+.app_store_div{
+	border-top:1px solid #fff;
+}
+.app_store_download button{
+    border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+    font-family: raleway;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    margin-top: 15px;
+    padding: 10px 16px;
+	 width: 220px;
+	 height: 60px;
+}
+.app_store_top{
+	width:100%;
+	float:left;
+	padding:55px 0 90px;
+}
+.avail_app_store_div{
+	width:100%;
+	float:left;
+}
+.avail_app_store_txt{
+	padding:55px 0;
+}
+.email_div{
+	width:45%;
+	float:right;
+}
+#contactForm  ul {
+    color: #ff0000;
+    float: left;
+    font-weight: bold;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.form_send_btn{
+	background-color: #fff;
+	width: 273px;
+	height:65px;
+    border: 2px solid #333;
+    color: #333333;
+    font-family: raleway;
+    font-size: 20px !important;
+    font-weight: 600;
+    padding: 12px 22px !important;
+}
+.form_send_btn:hover{border-width: 2px;  color: #fff;}
+ .social_icon_list{
+  	list-style:none;
+    
+}
+.social_icon_list li{
+	display:inline-block;
+	margin:0 5px;
+}
+.social_icon_list li a{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    height: 60px;
+    padding: 5px;
+    width: 60px;
+	opacity:1;
+}
+.social_icon_list li:hover a{
+	opacity:0.8;
+}
+.social_icon_list li a.fb_icon{
+	background:#3b5998;
+}
+.social_icon_list li a.twit_icon{
+	background: rgb(112, 186, 237);
+}
+.social_icon_list li a.gogle_plus_icon{
+	background: rgb(218, 72, 53);
+}
+.social_icon_list li a.vimeo_icon{
+	background:rgb(1, 185, 255);
+}
+.social_icon_list li a.pinterest_icon{
+	background:#d73532;
+}
+.social_icon_list li a.rss_icon{
+	background:rgb(254, 165, 1);
+}
+.social_icon_list li a i,.social_icon_list li a i{
+	margin-top:11px;
+}
+.watch_index header,.watch_index .navbar-default{
+	background:#323535;
+}
+.watch_index .navbar-default .navbar-nav > li > a{
+	color:#f2f2f2;
+}
+.watch_index .navbar-default .navbar-nav > .active > a, .watch_index  .navbar-default .navbar-nav > .active > a:focus,.watch_index   .navbar-default .navbar-nav > .active > a:hover,.watch_index .iphone_ban1 h1,.watch_index .iphone_ban1 p{color:#ffffff;}
+.watch_index .navbar-default .navbar-nav > .active > a, .watch_index  .navbar-default .navbar-nav > .active > a:focus,.watch_index   .navbar-default .navbar-nav > .active > a:hover{
+	border-bottom:2px solid #fff;
+}
+.watch_index .iphone_ban1 h2{color:#fff;}
+.watch_index  .iphone_ban1 h1{font-size:33px;font-weight:600;}
+
+.watch_index .media p,.watch_index  .feature_2 p{color:#848282;}
+.watch_index header .iwatch_container{padding-bottom:30px;}
+.watch_index .media-middle a{
+	border: 2px solid #c3c3c3;
+   -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+    display: inline-block;
+    height: 60px;
+    padding: 12px 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 60px;
+}
+.watch_index .media-middle a{ max-width: none;}
+.watch_index .media:nth-of-type(1) .media-middle img{padding-left:5px;}
+.watch_index .media:nth-of-type(2) .media-middle a{padding:12px 16px;}
+.sec_bck_wht {
+    background: none repeat scroll 0 0 #fff;
+    text-align: right;
+    z-index: 100;
+}
+.img_lft{text-align:left;}
+.watch_user_div{
+	background: none repeat scroll 0 0 #faf9f9;
+    color: #848282;
+    display: inline-block;
+    padding: 35px 24px;
+    position: relative;
+    width: 100%;
+}
+.comma_icon_blk{
+	background: #323535;
+    -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+    height: 50px;
+    left: 18px;
+    padding: 13px 0;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    width: 50px;
+}
+.txt_color p{color:#808080;}
+.watch_user_div p{
+	text-align:left;
+	font-style:italic;
+}
+.watch_user_name_img img {-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;   max-width: 81px;}
+.watch_user_name_img {
+	float: left;
+    width: 28%;
+}
+.watch_user_name_bot{
+	display: inline-block;
+    float: right;
+	text-transform:uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-top: 15px;
+    width: 67%;
+}
+.watch_user_name_bot span{
+	display:inline-block;
+	width:100%;
+}
+.yellow_star_watch{
+    color: #f3c401;
+}
+.grey_star_watch{
+	color:#c6c6c6;
+}
+.mar_top_large{
+	margin-top:70px;
+}
+.bck_dark_blk .iphone_ban1 h2{color:#fff;}
+.bck_dark_blk{
+	background:#323535;
+	color:#fff;
+}
+.avail_app_store_txt h2{
+	text-transform: none;
+    color:  rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: 30px;
+}
+.profile_div{
+	width: 100%;display: inline-block; text-align: center;margin-bottom: 20px;
+}
+.profile_div img.userImg{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	 border: 3px solid #333;
+}
+.profile_content p{color:#848282;}
+.profile_div span{
+	display:inline-block;
+	min-width:10%;
+}
+.features_carousel_div .carousel-indicators{
+	left: 30%;
+	text-align:left;
+}
+.switch_lnk_to_page a{
+	margin:5px;
+	display:inline-block;
+}
+
+.padding_lft{padding-left:0;}
+.padding_zero{padding-left:0;padding-right:0;}
+.non_italic p{
+	font-style:normal !important;
+}
+.carousel-indicators.iphone_carousel_div_feature{bottom:125px;}
+.happy_user_txt_color p{color:#848282;margin-bottom: 40px;}
+.user_star_rating {text-align:center;  margin-bottom: 15px;}
+.user_star_rating i{margin:4px;font-size:15px;}
+.app_screenshot_txt_color p{color:#808080;}
+.screenImg img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:100%;
+}
+.iphone_carousel_div_screenshots .carousel-indicators{bottom: -65px;}
+.iphone_carousel_div_screenshots .carousel-inner{margin-bottom: 30px;}
+.iphone_carousel_happy_users hr.star-primary{border-color:#ccc;   max-width: 25px;}
+.app_screen_padding_top{padding-top:85px;padding-bottom:0;}
+.switch_lnk_to_page {
+    margin-bottom: 15px;
+}
+.app_store_div{clear:both;}
+.contact_div_padding{padding-top:10px;}
+.contact_div_padding_txt p{color:#848282;}
+footer .footer-below{height:260px;}
+.caption {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 90%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.caption:hover {
+    opacity: 1;
+}
+.caption .caption-content {
+    color: #fff;
+    font-size: 20px;
+    height: 20px;
+    margin-top: -12px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.caption .caption-content i {
+    margin-top: -12px;
+}
+.watch_index .caption{width: 85%;
+ -webkit-border-radius: 54px;
+	-moz-border-radius: 54px;
+	border-radius: 54px;}
+.iwatch_user_txt p{color:#848282;}
+#screenshots * {
+    z-index: 2;
+}
+.watch_index .iwatch_feature_content  .iphone_ban1 h2{color:#323535;font-style:normal;}
+.watch_index .iwatch_feature_content  .iphone_ban1 p{color:#848282;font-style:normal;}
+.iwatch_app_screen_padding{padding-top:85px;}
+.watch_index .app_store_top{padding:55px 0 90px;}
+.watch_index .app_store_top .carousel{margin-bottom: 20px;}
+.watch_index .app_store_top .carousel .carousel-indicators{ bottom: -75px;}
+.form_send_btn i,.get_api i{font-weight: bold;font-size: 24px;padding-left: 5px}
+.app_screen_mob_icon{
+	background: url("../images/mobile1.png") no-repeat scroll center center #000;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    width: 45px;
+	border:2px solid #000;
+}
+.app_screen_mob_icon:hover{
+	background: url("../images/mobile1.png") no-repeat scroll center center #000;border-color:#000;
+}
+.app_screen_mob_icon_nonactive{background: url("../images/mobile1_hover.png") no-repeat scroll center center transparent;border:2px solid #d6d6d6;}
+.app_screen_iwatch_icon{
+	background: url("../images/watch.png") no-repeat scroll center center #fafafa;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    width: 45px;
+	border:2px solid #d6d6d6;
+}
+.app_screen_iwatch_icon:hover,.app_screen_iwatch_icon_active{
+	background: url("../images/watch_white.png") no-repeat scroll center center #000;
+    border-color: #000;
+}
+.border_radius_fiftyfour{
+	 -webkit-border-radius: 54px;
+	-moz-border-radius: 54px;
+	border-radius: 54px;
+	  width: 85%;
+}
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+	font-family: opensans;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 0px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default{
+    background-color: #ff309a;
+}
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+section {
+    padding: 100px 0 55px;
+}
+.section_heading.pad_bot_zeros{padding-bottom:0;}
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    color: #fff;
+    background: #18bc9c;
+}
+
+section.success a,
+section.success a:hover,
+section.success a:focus,
+section.success a:active,
+section.success a.active {
+    outline: 0;
+    color: #2c3e50;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+	.ban1_txt,.ban2_txt,.ban3_txt{padding-top:0;}
+	.email_div {
+		float: left;
+		width: 100%;
+	}
+	header img {
+		display: block;
+		margin: 20px auto 0;
+		max-width: 100%;
+	}
+	.navbar-brand{height:auto;}
+	.download_button {
+		margin-left: 0;
+		margin-top: 17px;
+		width: 100%;
+	}
+	.navbar .navbar-nav {
+		float: left;
+		
+		margin: 0;
+		width: 100%;
+	}
+	.floating-label-form-group{width:93%;margin-left:10px;}
+	.sec_mar_top {
+		margin-top: 0;
+	}
+	.sec_iphone_imgs{
+		margin-top:45px;
+	}
+	.screenshotSection{padding-top:0;}
+	.screenImg,.watch_screenImg{margin-bottom:10px;}
+	.watch_user_divs{margin-bottom:30px;}
+	.watch_screen_carousel{  bottom: -52px;}
+	.iphone_carousel_div,.carousel-indicators.iphone_carousel_div_feature {bottom:-45px;}
+	.social_icon_list li a{margin:5px;}
+	footer .footer-below{height:auto;}
+	.video_player object,.video_player embed{width:100%;height:100%;}
+	.padding_zero {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.padding_lft {
+		padding-left:10px;
+	}
+	.sec_bck_wht,.img_lft{text-align: center;}
+	.navbar-default .navbar-collapse ul.navbar-nav li.active a{color:#fff;}
+	.navbar-default .navbar-collapse ul.navbar-nav li a{
+		color:#f3f3f3;
+	}
+	.navbar-default .navbar-collapse{
+		background:#231f20;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.screenImg, .watch_screenImg{
+		width:50%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.ban1_txt,.ban2_txt ,.ban3_txt{
+		padding-top: 0;
+	}
+	.screenImg,.watch_screenImg,.watch_user_divs{margin-bottom:30px;}
+	.avail_app_store_txt {
+		padding: 15px 0;
+	}
+	.iphone_ban1 h2{font-size:22px;}
+	.iphone_ban1 h1,.watch_index .iphone_ban1 h1{
+	font-size:21px;
+	text-align: left;
+}
+	.navbar-header{width:17%;}
+	.navbar-header .navbar-brand img{width:100%;}
+	.nav > li > a{margin:8px;}
+	.navbar-default .navbar-nav > li > a{font-size:12px;}
+	.download_button{margin-top:10px;}
+}
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+	
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #18bc9c;
+    background: #fff;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+	 min-height: 58px;
+    border: 1px solid #e0e0e0;
+	 margin-bottom: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+	text-align:left;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    padding-top: 12px;
+	line-height:0;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #5cb85c;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2c3e50;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 75px 0;
+	color: #848282;
+    background-color: #fafafa;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+   -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
