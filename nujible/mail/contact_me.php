@@ -20,6 +20,6 @@ $email_body = "Thank you for contact us , We will get back to you soon...\n\n"."
 $headers = "From: noreply@infoenum.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: noreply@infoenum.com";	
 //mail($to,$email_subject,$email_body,$headers);
-mail($to,"noreply@github.com",$email_body,$headers);
+mail($to,$email_subject,$email_body,$headers);
 return true;			
 ?>
